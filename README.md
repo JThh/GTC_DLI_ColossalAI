@@ -2,13 +2,6 @@
 
 For detailed instructions and self-contained notebook to run the ColossalAI examples, refer to the `tutorial` folder.
 
-## Docker 
-Use `Dockerfile` to build a docker image with `docker build -t colossalai_tutorial .`
-
-Run a container from this image with `docker run -p 8888:8888 --runtime=nvidia colossalai_tutorial`
-
-Once the container is running, visit the content in your browser at `localhost:8888`.
-
 ## Introduction
 
 Welcome to the [Colossal-AI](https://github.com/hpcaitech/ColossalAI) tutorial, which has been accepted as official tutorials by top conference [SC](https://sc22.supercomputing.org/), [AAAI](https://aaai.org/Conferences/AAAI-23/), [PPoPP](https://ppopp23.sigplan.org/), etc.
@@ -19,6 +12,7 @@ many advanced technologies such as multi-dimensional tensor parallelism, sequenc
 large-scale optimization, adaptive task scheduling, etc. By using Colossal-AI, we could help users to efficiently and
 quickly deploy large AI model training and inference, reducing large AI model training budgets and scaling down the labor cost of learning and deployment.
 
+
 ### 🚀 Quick Links
 
 [**Colossal-AI**](https://github.com/hpcaitech/ColossalAI) |
@@ -27,6 +21,13 @@ quickly deploy large AI model training and inference, reducing large AI model tr
 [**Forum**](https://github.com/hpcaitech/ColossalAI/discussions) |
 [**Slack**](https://join.slack.com/t/colossalaiworkspace/shared_invite/zt-z7b26eeb-CBp7jouvu~r0~lcFzX832w)
 
+
+## Docker 
+Use `Dockerfile` to build a docker image with `docker build -t colossalai_tutorial .`
+
+Run a container from this image with `docker run -p 8888:8888 --runtime=nvidia colossalai_tutorial`
+
+Once the container is running, visit the content in your browser at `localhost:8888`.
 
 ## Discussion
 
