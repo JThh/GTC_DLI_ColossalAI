@@ -1,9 +1,5 @@
 FROM hpcaitech/cuda-conda:11.3
 
-# create and activate demo environment
-RUN conda create -n demo python=3.8
-RUN conda activate demo
-
 # install torch
 RUN conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=11.3 -c pytorch
 
