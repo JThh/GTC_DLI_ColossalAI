@@ -20,6 +20,7 @@ RUN conda install cmake && \
 
 # Update to latest jupyterlab and rebuild modules
 RUN pip install --upgrade jupyterlab
+RUN conda install -c "conda-forge/label/cf202003" nodejs
 RUN jupyter lab build
 
 # Create working directory to add repo.
