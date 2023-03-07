@@ -11,13 +11,6 @@ RUN git clone https://github.com/hpcaitech/ColossalAI.git \
 # install titans
 RUN pip install --no-cache-dir titans
 
-# install tensornvme
-RUN conda install cmake && \
-    git clone https://github.com/hpcaitech/TensorNVMe.git && \
-    cd TensorNVMe && \
-    pip install -r requirements.txt && \
-    pip install -v --no-cache-dir .
-
 # Update to latest jupyterlab and rebuild modules
 RUN pip install --upgrade jupyterlab
 RUN jupyter lab build
